@@ -1,0 +1,3 @@
+username= fariharizvi
+email= rfariha283@gmail.com
+password= fariharizvi123
