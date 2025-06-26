@@ -28,6 +28,10 @@ def student_form(request):
     
     return render(request, 'myapp/student_form.html', {'form': form})
 
+def student_list(request):
+    students = Student.objects.all()
+    return render(request, 'myapp/student_list.html', {'students': students})
+
 
 def index(request):
     return render(request, 'myapp/index.html')

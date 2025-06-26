@@ -4,7 +4,7 @@ from .models import Student
 class StudentForm(forms.ModelForm):
     class Meta:
         model = Student
-        fields = ['name', 'age', 'contactno', 'description', 'photo']  # fields to show in form
+        fields = ['name', 'age', 'contactno', 'branch', 'photo']  # fields to show in form
 
 def clean_contactno(self):
         contact = self.cleaned_data.get('contactno')
